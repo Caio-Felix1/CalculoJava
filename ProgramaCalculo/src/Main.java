@@ -42,15 +42,32 @@ public class Main {
                     linhas();
                     break;
                 case "5":
-                    CalculoComplexo.media();
+                    CalculoComplexo.media(teclado);
                     linhas();
+                    try {
+                        Thread.sleep(2500);
+                    } catch (InterruptedException e) {
+                        ;
+                    }
                     break;
                 case "6":
-                    CalculoComplexo.fatorial();
+                    CalculoComplexo.fatorial(teclado);
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        ;
+                    }
                     linhas();
                     break;
                 case "7":
-                    CalculoComplexo.bhaskara();
+                    CalculoComplexo.bhaskara(teclado);
+
+                    try {
+                        Thread.sleep(10000);
+                    } catch (InterruptedException e) {
+                        ;
+                    }
+
                     linhas();
                     break;
                 case "8":
