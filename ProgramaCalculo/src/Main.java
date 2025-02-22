@@ -26,19 +26,19 @@ public class Main {
 
             switch (num) {
                 case "1":
-                    CalculoBasico.soma();
+                    CalculoBasico.soma(teclado);
                     linhas();
                     break;
                 case "2":
-                    CalculoBasico.subtracao();
+                    CalculoBasico.subtracao(teclado);
                     linhas();
                     break;
                 case "3":
-                    CalculoBasico.divisao();
+                    CalculoBasico.divisao(teclado);
                     linhas();
                     break;
                 case "4":
-                    CalculoBasico.multiplicacao();
+                    CalculoBasico.multiplicacao(teclado);
                     linhas();
                     break;
                 case "5":
@@ -59,6 +59,7 @@ public class Main {
                 default:
                     System.out.println("Opção inválida. Tente novamente!");
                     linhas();
+                    break;
             }
             try {
                 Thread.sleep(1500);
@@ -66,6 +67,7 @@ public class Main {
                 ;
             }
         } while (!num.equals("8"));
+        teclado.close();
     }
 
     public static void main(String[] args) {
